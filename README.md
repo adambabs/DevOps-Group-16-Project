@@ -1,12 +1,13 @@
 # DevOps-Group-16-Project
 
 
-Remember to install postgreSQL locally and enter the 'database.sql' file there
-To run:
+##### Remember to install postgreSQL locally and enter the 'database.sql' file there
 
-### cd server
-### node index
+### To run:
 
-open another terminal and run:
-### cd client
-### npm start
+##### cd server
+##### node index
+
+### Open another terminal and run:
+##### cd client
+##### npm start
