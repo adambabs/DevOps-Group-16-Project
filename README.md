@@ -1,7 +1,8 @@
 # DevOps-Group-16-Project
 
 
-to run:
+Remember to install postgreSQL locally and enter the 'database.sql' file there
+To run:
 
 cd server
 node index
