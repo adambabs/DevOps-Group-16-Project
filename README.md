@@ -5,9 +5,9 @@
 
 ### To run:
 
-##### cd server
-##### node index
+##### - cd server
+##### - node index
 
 ### Open another terminal and run:
-##### cd client
-##### npm start
+##### - cd client
+##### - npm start
