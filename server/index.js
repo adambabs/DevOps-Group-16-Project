@@ -15,7 +15,7 @@ app.post("/transactions", async (req, res) => {
   try {
     const { description } = req.body;
     const newTransaction = await pool.query(
-      "INSERT INTO finboard (description) VALUES($1) RETURNING *",
+      "INSERT INTO finboard (stock_abreviation, amount, buy_value, description) VALUES($1, $2, $3, $4) RETURNING *",
       [description]
     );
 
@@ -58,7 +58,7 @@ app.put("/transactions/:id", async (req, res) => {
     const { id } = req.params;
     const { description } = req.body;
     const updateTransaction = await pool.query(
-      "UPDATE finboard SET description = $1 WHERE transaction_id = $2",
+      "UPDATE finboard SET tock_abreviation = $1, amount = $2, buy_value = $3 ,description = $4,  WHERE transaction_id = $5",
       [description, id]
     );
 
